@@ -296,10 +296,9 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
-    android.hardware.power-V2-ndk.vendor:64 \
-    android.hardware.power@1.2.vendor:64 \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    vendor.mediatek.hardware.mtkpower@1.2.vendor \
+    android.hardware.power@1.3-service.laurel_sprout-libperfmgr \
+    android.hardware.power.stats@1.0-service.pixel 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
@@ -417,8 +416,6 @@ PRODUCT_PACKAGES += \
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek \
-    hardware/xiaomi
 
 # SoundTrigger
 PRODUCT_PACKAGES += \

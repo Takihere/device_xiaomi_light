@@ -145,8 +145,6 @@ BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := mt6833
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
@@ -154,6 +152,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
